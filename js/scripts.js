@@ -19,7 +19,7 @@ var subtract = function(number1, number2) {
 // Everything below this line is user interface (or front-end) logic:
 
 $(document).ready(function() {
-  $("form#calculator").submit(function(event) {
+  $("#add").click(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#num1").val());
     console.log(number1);
@@ -28,22 +28,22 @@ $(document).ready(function() {
     $(".output").text(result);
     console.log(result);
   });
-  $("form#calculator").submit(function(event) {
-    // event.preventDefault();
+  $("#subtract").click(function(event) {
+    event.preventDefault();
     var number1 = parseInt($("#num1").val());
     var number2 = parseInt($("#num2").val());
     var result = subtract(number1, number2);
     $(".output").text(result);
   });
-  $("form#calculator").submit(function(event) {
-    // event.preventDefault();
+  $("#multiply").click(function(event) {
+    event.preventDefault();
     var number1 = parseInt($("#num1").val());
     var number2 = parseInt($("#num2").val());
     var result = multiply(number1, number2);
     $(".output").text(result);
   });
-  $("form#calculator").submit(function(event) {
-    // event.preventDefault();
+  $("#divide").click(function(event) {
+    event.preventDefault();
     var number1 = parseInt($("#num1").val());
     var number2 = parseInt($("#num2").val());
     var result = divide(number1, number2);
