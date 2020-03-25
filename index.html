@@ -10,18 +10,21 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
-      <form id="add">
+      <form id="calculator">
         <div class="form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text" />
+          <label for="num1">1st number:</label>
+          <input id="num1" class="form-control" type="text" />
         </div>
         <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text" />
+          <label for="num2">2nd number:</label>
+          <input id="num2" class="form-control" type="text" />
         </div>
-        <button type="submit" class="btn-dark">Add!</button>
+        <button type="submit" id="add" class="btn-dark">Add!</button>
+        <button type="submit" class="btn-success">Subtract!</button>
+        <button type="submit" class="btn-danger">Multiply!</button>
+        <button type="submit" class="btn-info">Divide!</button>
       </form>
-      <div id="output"></div>
+      <div class="output"></div>
     </div>
   </body>
 </html>
